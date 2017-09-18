@@ -17,4 +17,4 @@
 - Run `setup.sh`, which will download npm packages, execute scripts, and run server on http://locahost:3000
 
 
-[Imgur](https://i.imgur.com/yvU1s6i.jpg)
+![Imgur](https://i.imgur.com/yvU1s6i.jpg)
