@@ -1,0 +1,33 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+      "baseUrl": ".",
+      "rootDir": "./src/server",
+      "outDir": "./dist",
+      "declaration": false,
+      "module": "commonjs",    
+      "moduleResolution": "node",
+      "noEmit": false,
+      "noEmitOnError": true,
+      "sourceMap": true,
+      "noImplicitAny": false,
+      "lib": ["es6"],
+      "skipLibCheck": true,
+      "target": "es6",
+      "allowJs": false, 
+      "strictNullChecks": true,
+      "noUnusedParameters": false,
+      "noUnusedLocals": false,
+      "allowSyntheticDefaultImports": true,
+      "allowUnreachableCode": false,
+      "experimentalDecorators": true,
+      "removeComments": true
+    },
+    "include": [
+      "src/server/**/*.ts"
+    ],
+    "exclude": [
+      "node_modules",
+      "./**/*.spec.ts"
+    ]
+  }

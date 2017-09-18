@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <% include ./partials/header %>   
+      <link rel='stylesheet' href='/stylesheets/bootstrap-datetimepicker.min.css' />  
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">      
+  </head>
+  <body>
+    <% include ./partials/nav %>
+    <div id="main_stub"></div>
+    <% include ./partials/footer %>   
+     
+    <!-- <script src="/javascripts/lib/bootstrap-datetimepicker.min.js"></script>         -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAeq8obA7bNkbtZtjSaxT2M6LL3GWEklds&libraries=places"></script>
+    <script data-main="/javascripts/index" src="/javascripts/lib/require.js"></script>
+    <script>
+    requirejs.config({
+        baseUrl: "javascripts",
+        paths: {
+            // the left side is the module ID,
+            // the right side is the path to
+            // the jQuery file, relative to baseUrl.
+            // Also, the path should NOT include
+            // the '.js' file extension. This example
+            // is using jQuery located at
+            // js/lib/jquery.js, relative to
+            // the HTML page.
+            bootstrap: "lib/bootstrap.min",
+            jquery: "lib/jquery",
+            tether: "lib/tether.min",
+            moment: "lib/moment.min",
+            datetimepicker: "lib/bootstrap-datetimepicker.min",
+        },
+    });
+    requirejs(["jquery", "tether", "bootstrap", "moment", "datetimepicker", "index"]);
+    </script>    
+  </body>
+</html>

@@ -1,0 +1,54 @@
+.form-group label {
+  font-size: 1rem;
+}
+
+.flight-search-container {
+  background: url("../images/airplane-bg.jpg") no-repeat center center fixed;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.flight {
+  background: transparentize(white, 0.33);
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem 0.7rem;
+}
+
+.flight-item {
+  border-radius: 6px;
+  background: transparentize(white, 0.22);
+  margin: 0.5rem 0;
+  padding: 0.3rem;
+
+  &-header {
+    color: #005daf;
+  }
+  &-datetime {
+    color: #040404;
+  }
+  &-place-and-time {
+    font-weight: 300;
+    font-size: 1.1rem;
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: solid #9e9e9e 1px;
+    border-radius: 0.5rem; 
+  }
+  &-datetime__time {
+    font-weight: normal;
+  }
+  &-price {
+    color: #00a200;
+    font-size: 1.2rem;
+    margin: 0.5rem;
+  }
+  &-arrow {
+    font-size: 2rem;
+    height: 4rem;
+    vertical-align: middle;
+  }
+}

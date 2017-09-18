@@ -1,0 +1,33 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+      "baseUrl": ".",
+      "rootDir": "./src/client/javascripts",
+      "outFile": "./dist/public/javascripts/index.js",
+      "declaration": false,
+      "module": "amd", 
+      "moduleResolution": "node",   
+      "noEmit": false,
+      "noEmitOnError": true,
+      "sourceMap": false,
+      "noImplicitAny": false,
+      "lib": ["es6", "dom", "es2015.promise"],
+      "skipLibCheck": true,
+      "target": "es6",
+      "allowJs": false, 
+      "strictNullChecks": true,
+      "noUnusedParameters": false,
+      "noUnusedLocals": false,
+      "allowSyntheticDefaultImports": true,
+      "allowUnreachableCode": false,
+      "experimentalDecorators": true,
+      "removeComments": true 
+    },
+    "include": [
+      "src/client/javascripts/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "**/*.spec.ts"
+    ]
+}
