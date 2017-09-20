@@ -14,7 +14,7 @@
     "client:css:watch": "node_modules/.bin/nodemon -e scss -w './src/client/styles/' -x \"npm run client:css:build\"",
     "client:css:build": "npm run client:css:main && npm run client:css:bootstrap",
     "client:css:main": "node_modules/.bin/node-sass --output-style compressed  src/client/styles/main.scss --output dist/public/stylesheets/",
-    "client:css:bootstrap": "node_modules/.bin/node-sass --output-style compressed  src/client/styles/bootstrap/scss/bootstrap.scss --output dist/public/stylesheets/",
+    "client:css:bootstrap": "node_modules/.bin/node-sass --output-style compressed  src/client/styles/bootstrap/bootstrap.scss --output dist/public/stylesheets/",
     "server:dev": "node_modules/.bin/concurrently \"npm run server:ts:watch\" \"npm run server:nodemon\"",
     "server:build": "npm run server:ts:lint && node_modules/.bin/tsc",
     "server:nodemon": "node_modules/.bin/nodemon ./dist/bin/www",

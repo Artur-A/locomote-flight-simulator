@@ -960,3 +960,14 @@ $pre-bg:                      $gray-lightest !default;
 $pre-color:                   $gray-dark !default;
 $pre-border-color:            #ccc !default;
 $pre-scrollable-max-height:   340px !default;
+
+
+// Additional styles
+.bg-bright {
+  background-color: transparentize($yellow, 0.2);
+}
+
+.container-fluid {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
